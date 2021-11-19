@@ -1,0 +1,220 @@
+.NavBar__Container{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #5556;
+}
+
+.isActive{
+  display: initial;
+}
+
+.NavBar{
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.NavBar__Header{
+  padding: 0 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #9997;
+}
+
+.NavBar__Header__Title{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.NavBar__User__Dats{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.User__Dats{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.User__Dats__ImgProfile{
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.User__Dats__Names{
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.User__Dats__Name{
+  font-weight: 600;
+}
+
+.User__Dats__NameId,
+.User__Follows{
+  color: #536471;
+}
+
+.NavBar__User__Specs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.NavBar__IconPlus__Container{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #536471;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavBar__IconPlus{
+  width: 1.2rem;
+  fill: #536471;
+}
+
+.ListOfNavigations{
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.Navigations{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.NavigationsIcon{
+  margin-right: 1rem;
+  width: 1.3rem;
+}
+
+.IconGuardados__Container{
+  position: relative;
+}
+
+.Pincel{
+  position: absolute;
+  left: 0;
+  fill: #1d9bf0;
+}
+
+.IconTwitter__Container{
+  display: none;
+}
+
+.IconTwitter{
+  width: 2rem;
+}
+
+.CreateTweet > p {
+  display: none;
+}
+
+@media only screen and ( min-width: 768px ){
+  .NavBar__Container{
+    display: initial;
+    position: sticky;
+    height: 100vh;
+    width: 4rem;
+  }
+
+  .NavBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .Navigations{
+    width: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .NavBar__User__Dats{
+    margin-bottom: 1rem;
+    order: 1;
+    padding: 0;
+  }
+
+  .ListOfNavigations{
+    padding: 0;
+  }
+
+  .NavigationsIcon{
+    width: 1.75rem;
+  }
+
+  .IconTwitter__Container{
+    display: initial;
+  }
+
+  .CreateTweet{
+    display: flex;
+    justify-content: center;
+    background-color: #1d9bf0;
+    border-radius: 50%;
+  }
+
+  .NavBar__Header,
+  .NavBar__IconPlus__Container,
+  .NavBar__User__Specs,
+  .User__Dats__Names,
+  .Navigations__Title{
+    display: none;
+  }
+}
+
+@media only screen and ( min-width: 1024px ){
+  .NavBar__Container{
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and ( min-width: 1024px ){
+  .User__Dats{
+    flex-direction: row;
+    align-items: center;
+  }
+  .User__Dats__ImgProfile{
+    margin-right: 1rem;
+  }
+  .User__Dats__Names{
+    display: flex;
+  }
+  .NavBar__Container{
+    width: 100%;
+    max-width: 260px;
+  }
+  .Navigations{
+    width: 80%;
+  }
+  .Navigations__Title{
+    display: initial;
+  }
+  .CreateTweet{
+    border-radius: 2rem;
+  }
+  .IconCreateTweet{
+    display: none;
+  }
+  .CreateTweet > p {
+    display: initial;
+    color: #fff;
+    font-weight: 600;
+  }
+}

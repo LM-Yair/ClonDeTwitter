@@ -1,0 +1,40 @@
+.News{
+  display: none;
+  margin: 0 1rem;
+  min-width: 240px;
+  max-width: 350px;
+}
+
+@media only screen and ( min-width: 1024px ){
+  .News{
+    display: initial;
+    position: sticky;
+    top: 0;
+  }
+  .News > * {
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    background-color: #f7f9f9;
+  }
+  .News__Search{
+    border: 1px solid #fff;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+  }
+  .News__Search__Icon{
+    width: 1.3rem;
+    color: #536471;
+  }
+  .News__Search__Text{
+    margin-left: 1rem;
+    color: #536471;
+  }
+  .News__News{
+    height: 20rem;
+  }
+  .News__WhoFollow{
+    height: 15rem;
+  }
+}

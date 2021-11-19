@@ -1,0 +1,39 @@
+.Header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 3.2rem;
+  border-bottom: 1px solid #4445;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.Header__HandleNav{
+  position: absolute;
+  top: 0.9rem;
+  left: 1rem;
+  width: 1.85rem;
+  border-radius: 50%;
+}
+
+.Header__Title{
+  font-size: 1rem;
+  margin-left: 4.5rem;
+}
+
+.IconStars{
+  margin-right: 1rem;
+  width: 19px;
+  height: 19px;
+}
+
+
+@media only screen and ( min-width: 768px ){
+  .Header__Title{
+    margin-left: 1rem;
+  }
+  .Header__HandleNav{
+    display: none;
+  }
+}

@@ -1,0 +1,63 @@
+.Tweet{
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  min-height: 5rem;
+  border-bottom: 1px solid #4445;
+  display: flex;
+}
+
+.Tweet__body{
+  width: 100%;
+}
+
+.Tweet__img{
+  margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.Tweet__Header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tweet__Header__UserDats{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Tweet__Header__UserName{
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.Tweet__Header__UserAt{
+  color: #536471;
+}
+
+.Tweet__Header__Settings{
+  width: 1.25rem;
+}
+
+.Tweet__Actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Tweet__Action__Container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tweet__Action{
+  width: 1.25rem;
+  fill: #a9b2b8;
+}
+
+.Tweet__Action__Count{
+  margin: 0;
+  margin-left: 0.5rem;
+}
+

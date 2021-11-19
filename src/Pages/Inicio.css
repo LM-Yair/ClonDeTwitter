@@ -1,0 +1,21 @@
+.PageContainer{
+  min-height: 100vh;
+}
+
+.Inicio{
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+@media only screen and ( min-width: 768px ){
+  .PageContainer{
+    display: flex;
+    justify-content: center;
+  }
+  .Inicio{
+    padding: 0;
+    max-width: 600px;
+    border: 1px solid #4445;
+    border-top: none;
+  }
+}
